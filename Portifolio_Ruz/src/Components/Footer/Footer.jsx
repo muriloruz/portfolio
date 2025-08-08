@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import footer_logo from '../../assets/logo.svg'
 import user_icon from '../../assets/user_icon.svg'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Footer = () => {
   return (
     <div className='footer'>
@@ -11,11 +12,7 @@ const Footer = () => {
                 <p>Eu sou Murilo, desenvolvedor back-end!</p>
             </div>
             <div className="footer-top-right">
-                <div className="footer-email-input">
-                    <img src={user_icon} alt="" />
-                    <input type="email" placeholder='Coloque o seu E-mail'/>
-                </div>
-                <div className="footer-subscribe">Subscribe</div>
+                <AnchorLink href="#contect"><div className="footer-subscribe">Enviar Mensagem!</div></AnchorLink>
             </div>
         </div>
         <hr />
@@ -26,7 +23,7 @@ const Footer = () => {
             <div className="footer-bottom-right">
                 <p>Term of Services</p>
                 <p>Privacy Policy</p>
-                <p>Connect with me</p>
+                <a href="https://www.linkedin.com/in/murilo-ruz-soares-21ba7222a/"><p>Connect with me</p></a>
            </div>
         </div>
     </div>

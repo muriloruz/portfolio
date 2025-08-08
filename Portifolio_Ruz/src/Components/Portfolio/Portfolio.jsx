@@ -12,18 +12,18 @@ const Portfolio = () => {
         </div>
         <div className="mywork-container">
             {mywork_data.map((work, index) => {
-                return <div className="inside">
+                return <a key={index} href={work.w_gh} className='inside'>
                     <img key={index} src={work.w_img} alt="" className='mywork-img' />
                     <h2 key={index}>{work.w_name}</h2>
                     <p key={index}>{work.w_desc}</p>
-                </div>
+                </a>
                 
             })}
         </div>
-        <div className="mywork-showmore">
+        <a href="https://github.com/muriloruz"><div className="mywork-showmore">
             <p>Ver Mais</p>
             <img src={arrow_icon} alt="" />
-        </div>
+        </div></a>
     </div>
   )
 }

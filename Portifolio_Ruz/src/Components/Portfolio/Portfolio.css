@@ -1,97 +1,167 @@
-
-.mywork{
+.mywork {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
-    
+    margin: 5rem 2rem;
+    gap: 5rem;
 }
-.mywork-title{
+
+.mywork-title {
     position: relative;
+
 }
-.mywork-title h1{
-    padding: 0px 30px;
-    font-size: 80px;
+.mywork-showmore p, a{
+        text-decoration: none;
+        color: #fff;
+    }
+.mywork-title h1 {
+    padding: 0 1.5rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: 600;
 }
-.mywork-title img{
+
+.mywork-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
-}
-.mywork-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-}
-.mywork-container img{
-    box-sizing: border-box;
-    width: 419px;
-    height: 280px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.inside{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    text-align: justify;
-    padding: 5%;
-    background: linear-gradient(160deg, #000000 50%, #7002ff 100%);
-    transition: 0.3s;
-}
-.inside:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-    cursor: pointer;
-}
-.inside h2{
-    text-align: center;
-}
-.mywork-showmore{
-    display: flex;
-    gap: 15px;
-    border-radius: 50px;
-    border: 2px solid white;
-    padding: 30px 60px;
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: 500;
-    transition: 0.6s;
-    margin-bottom: 80px;
-}
-.mywork-showmore:hover{
-    gap: 30px;
-    transition: 0.6s;
+    max-width: 30%;
 }
 
-@media(max-width: 768px){
-    .mywork{
-        gap: 50px;
-        margin: 50px 70px;
-        align-items: start;
-    }    
-    .mywork-container{
+.mywork-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.inside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    text-align: justify;
+    padding: 1.5rem;
+    background: linear-gradient(160deg, #000 50%, #7002ff 100%);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.inside:hover {
+    transform: scale(1.05);
+}
+
+.inside img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.inside h2 {
+    text-align: center;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    margin: 0.5rem 0;
+}
+
+.inside p {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    margin: 0;
+}
+
+.mywork-showmore {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    padding: 1.25rem 2.5rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-weight: 500;
+    transition: gap 0.6s ease;
+    margin: 2rem 0 5rem;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.mywork-showmore:hover {
+    gap: 1.25rem;
+}
+
+@media (max-width: 992px) {
+    .mywork {
+        margin: 3rem 1.5rem;
+        gap: 3rem;
+    }
+    
+    .mywork-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .mywork-title h1 {
+        font-size: 3.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mywork {
+        margin: 3rem 1rem;
+        gap: 3rem;
+    }
+    
+    .mywork-container {
         grid-template-columns: 1fr;
+        max-width: 500px;
     }
-    .mywork-title h1{
-        padding: 0px;
-        font-size: 50px;
-        font-weight: 600;
+    
+    .mywork-title h1 {
+        font-size: 2.5rem;
+        padding: 0;
     }
-    .mywork-title img{
+    
+    .mywork-title img {
         width: 130px;
         right: -20px;
     }
-    .mywork-showmore{
-        padding: 20px 40px;
-        font-size: 18px;
-        margin: 50px auto;
-        cursor: pointer;
+    
+    .mywork-showmore {
+        padding: 1.25rem 2rem;
+        margin: 3rem auto;
     }
 }
 
+@media (max-width: 576px) {
+    .mywork {
+        margin: 0 1rem;
+        gap: 2rem;
+    }
+    
+    .mywork-title h1 {
+        font-size: 1.875rem;
+        margin-top: -3.5rem;
+    }
+    
+    .mywork-title img {
+        top: -3.5rem;
+        right: 0;
+        width: 100px;
+    }
+    
+    .inside img {
+        height: 150px;
+    }
+    
+    .mywork-showmore {
+        padding: 1rem 1.5rem;
+        font-size: 0.875rem;
+        margin: 2rem 0;
+    }
+    
+}

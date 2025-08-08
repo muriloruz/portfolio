@@ -86,3 +86,42 @@
         border-radius: 40px;
     }
 }
+@media(max-width: 576px) {
+    .hero img{
+        margin-top: 65px;
+        width: 255px;
+        height: 250px;
+    }
+    .hero h1{
+        margin-top: 10px;
+    }
+    .hero p{
+        width: 80%;
+    }
+    .hero-action{
+        margin-top:-20px;
+        flex-direction: column;
+    }
+}
+@media(max-width: 992px) {
+    .hero img{
+        margin-top: 65px;
+        width: 255px;
+    }
+    .hero p{
+        width: 75%;
+    }
+}
+@media(max-width: 1399px) {
+    .hero img{
+        margin-top: 45px;
+        width: 300px;
+    }
+    .hero h1{
+        width: 90%;
+        font-weight: 500;
+    }
+    .hero p{
+        width: 75%;
+    }
+}

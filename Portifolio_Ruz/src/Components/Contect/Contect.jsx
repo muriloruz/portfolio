@@ -4,14 +4,15 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import phone_icon from '../../assets/call_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
-const Contect = () => {
+
+const Contect = ({ value, onChange }) => {
     const [result, setResult] = React.useState("");
     const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "03822a8f-5b3d-4ae9-b2d4-7aadc4b18b11");
+    formData.append("access_key", import.meta.env.VITE_ACS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -56,7 +57,7 @@ const Contect = () => {
                 <label htmlFor="name">Seu nome</label>
                 <input type="text" placeholder='João Souza Gomes' name="name" required/>
                 <label htmlFor="email">Seu email</label>
-                <input type="email" placeholder='joao@exemplo.com' name="email" required/>
+                <input type="email" placeholder='joao@exemplo.com' name="email" value={value} required/>
                 <label htmlFor="message" >Seu mensagem</label>
                 <textarea placeholder='Envie sua mensagem' name="message"  rows="8" required></textarea>
                 <button className="contact-submit" type="submit">Enviar</button>
