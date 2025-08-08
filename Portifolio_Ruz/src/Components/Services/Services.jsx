@@ -17,7 +17,7 @@ const Services = () => {
     setShowPopup(true);
   };
   return (
-    <div id="services" className="services">
+    <div id="services" className="services" translate="no">
       <div className={`services-content ${showPopup ? 'blurred' : ''}`}>
         <div className="services-title">
           <h1>Serviços</h1>

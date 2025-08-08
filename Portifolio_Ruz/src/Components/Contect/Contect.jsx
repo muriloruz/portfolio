@@ -32,7 +32,7 @@ const Contect = ({ value, onChange }) => {
   };
 
   return (
-    <div id="contect" className="contect">
+    <div id="contect" className="contect" translate="no">
         <div className="contect-title">
             <h1>Entre em contato</h1>
             <img src={theme_pattern} alt="" /> 

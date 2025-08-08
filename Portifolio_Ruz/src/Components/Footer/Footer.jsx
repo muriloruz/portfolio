@@ -5,7 +5,7 @@ import user_icon from '../../assets/user_icon.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer' translate="no">
         <div className="footer-top">
             <div className="footer-top-left">
                 <img src={footer_logo} alt="" />
