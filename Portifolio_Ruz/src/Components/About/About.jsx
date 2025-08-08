@@ -14,15 +14,15 @@ const About = () => {
                     <img src={profile_img} alt="" id="imagem" />
                 </div>
                 <div className="about-right">
-                    <div className="about-para">
+                    <div className="about-para" translate="no">
                         <p>Possuo 5 anos de estudo em programação. Comecei na ETEC durante o ensino médio, no qual apreendi a linguagem C++, continuei na área de programação e ingressei na FATEC em busca de mais conhecimento. Já trabalhei em projetos tanto no front-end quanto no back-end. Domino linguagens como Java, C#, Python, Mysql e Javascript. </p>
                         <p>No front-end trabalhei principalmente com React, já no back-end trabalhei com Java, C#, JS e Mysql. Também possuo conhecimento no desenvolvimento mobile com a linguagem Java da plataforma AndroidStudio e o framework Flutter da linguagem Dart.</p>
                     </div>
                     <div className="about-skills">
-                        <div className="about-skill"><p>Java</p><hr style={{ width: "70%" }} /></div>
-                        <div className="about-skill"><p>Flutter</p><hr style={{ width: "43%" }} /></div>
-                        <div className="about-skill"><p>Python</p><hr style={{ width: "65%" }} /></div>
-                        <div className="about-skill"><p>JavaScript</p><hr style={{ width: "56%" }} /></div>
+                        <div className="about-skill" translate="no"><p>Java</p><hr style={{ width: "70%" }} /></div>
+                        <div className="about-skill" translate="no"><p>Flutter</p><hr style={{ width: "43%" }} /></div>
+                        <div className="about-skill" translate="no"><p>Python</p><hr style={{ width: "65%" }} /></div>
+                        <div className="about-skill" translate="no"><p>JavaScript</p><hr style={{ width: "56%" }} /></div>
                     </div>
                 </div>
             </div>
