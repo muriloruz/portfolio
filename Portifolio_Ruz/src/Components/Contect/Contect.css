@@ -172,8 +172,7 @@
     }
     
     .contect-title img {
-        width: 130px;
-        right: -20px;
+        position: absolute;
     }
     
     .contect-detail {
@@ -191,7 +190,9 @@
         margin: 2rem 1rem;
         gap: 1.5rem;
     }
-    
+    .contect-title h1 {
+        font-size: 30px;
+    }
     .contect-left h1 {
         font-size: 2.25rem;
     }
@@ -199,5 +200,13 @@
     .contact-submit {
         width: 100%;
         padding: 0.8rem;
+    }
+}
+@media(max-width: 363px){
+    .contect-right input{
+        width: 80%;
+    }
+    .contect-right textarea{
+        width: 80%;
     }
 }
