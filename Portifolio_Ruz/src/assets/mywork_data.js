@@ -17,7 +17,7 @@ const mywork_data = [
         w_no:2,
         w_name:"API VOITUTRE",
         w_img:project2_img,
-        w_desc:"API desenvolvida em C# com .NET 6 para o sistema de e-commerce VOITUTRE. A API fornece endpoints para gerenciar produtos, usuários e pedidos, permitindo que o aplicativo mobile se comunique eficientemente com o servidor. Com autenticação, autorização e métodos de pagemento implementadas, a API garante segurança e integridade dos dados, facilitando a escalabilidade do sistema."
+        w_desc:"API desenvolvida em C# com .NET 6 para o sistema de e-commerce VOITUTRE. A API fornece endpoints para gerenciar produtos, usuários e pedidos, permitindo que o aplicativo mobile se comunique eficientemente com o servidor. Com autenticação, autorização e métodos de pagemento implementados, a API garante segurança e integridade dos dados, facilitando a escalabilidade do sistema."
         ,w_gh:"https://github.com/muriloruz/APIVoiture"
     },
     {
